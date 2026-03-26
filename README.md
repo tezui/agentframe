@@ -15,6 +15,7 @@ Bu repo, her projede LLM agent'lerin **kendi kendini yönetebileceği** bir çal
 4. Her task öncesi `workflow/01-memory/active-context.md` + `workflow/02-planning/current-task.md` güncelle
 
 ## LLM Entry Files
+- `AGENTCLAW_DASHBOARD.md` → en sade kuşbakışı panel
 - `AGENTCLAW_SYSTEM_MAP.md` → kısa teknik harita
 - `AGENTCLAW_QUICKSTART.md` → yeni agent için hızlı giriş
 
@@ -28,8 +29,10 @@ Bu repo, her projede LLM agent'lerin **kendi kendini yönetebileceği** bir çal
 - `workflow/06-llm-advice`: eski llm advice alanı (geri uyumluluk)
 - `workflow/07-mcp`: MCP server yönetimi
 - `workflow/08-research`: internet araştırmaları, kurulum notları, güncel çözüm kayıtları
+- `workflow/09-archive`: merkezi konuşma, diff, karar, hata ve prompt arşivi
 - `workflow/BROWSER_CONTROL`: browser bağlantısı, Playwright, monitoring görevleri
 - `workflow/DEPLOY`: GitHub, Vercel, branch ve version politikaları
+- `workflow/DEPLOY/OPERATOR_RUNBOOK.md`: senin ve agent'in ne yapacağını adım adım anlatan operasyon dosyası
 - `workflow/SECURITY`: env, authorization, policy, dashboard güvenliği
 - `workflow/TOOLS`: Cursor/Cline/RooCode/KiloCode/Windsurf/Antigravity araç ayarları
 - `workflow/UI_FIDELITY`: strict UI kuralları + visual regression
@@ -59,3 +62,4 @@ workflow/
 - Ajanlar arası iletişim için ana klasör: `workflow/llmadvice`
 - `workflow/06-llm-advice` klasörü geriye dönük uyumluluk / eski referanslar içindir.
 - Güvenli operasyon sırası: env -> secret scan -> git -> GitHub -> Vercel -> deploy
+- Repo stratejisi: `agentframe` framework repo, üretilecek her ürün ayrı proje repo

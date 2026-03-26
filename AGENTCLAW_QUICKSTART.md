@@ -20,6 +20,10 @@ Yeni bir agent bu repo içinde çalışmaya başlamadan önce şunları yapar:
 - Yorum bırak
 - Research kaydı oluştur
 
+## Repo Kuralı
+- Framework geliştirme bu repoda yapılır
+- Gerçek ürün/proje üretimi ayrı repo’da yapılır
+
 ## 4) Ne yapamazsın?
 - Owner onayı olmadan kritik kural dosyalarını değiştiremezsin
 - Lock almadan write/branch/commit yapamazsın

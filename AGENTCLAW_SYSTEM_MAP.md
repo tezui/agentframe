@@ -19,6 +19,10 @@ Bu dosya, tüm sistemin LLM-friendly kısa teknik haritasıdır.
 - `workflow/llmadvice` → ajanlar arası iletişim, lock, handover
 - `workflow/projects` → proje bazlı izole çalışma alanı
 
+## Repo Modeli
+- `agentframe` = framework repo
+- üretilecek her gerçek ürün = ayrı repo
+
 ## 3. Ana Davranışlar
 - Her aksiyon öncesi context okunur
 - Tek repo/worktree üzerinde tek writer agent çalışır

@@ -1,4 +1,4 @@
-# CURRENT TASK
+ya# CURRENT TASK
 
 ## Task ID
 TASK-INIT-001
@@ -18,3 +18,8 @@ Workflow altyapısını operable ve yönetilebilir seviyeye tamamla.
 - [x] llmadvice comments schema + lock tooling eklenecek
 - [x] Placeholder scriptler çalışır rapor/log üreten MVP seviyesine dönüştürüldü
 - [ ] Dashboard backend/frontend gerçek çalışan MVP'ye dönüştürülecek
+
+## Sprint-2 References
+- `workflow/02-planning/sprint-2-tasklist.md`
+- `workflow/02-planning/sprint-2-checklist.md`
+- `workflow/08-research/topics/agentframe-vs-agentclaw-comparison.md`
