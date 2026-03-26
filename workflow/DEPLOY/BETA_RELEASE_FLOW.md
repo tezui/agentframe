@@ -1,6 +1,6 @@
 # BETA RELEASE FLOW
 
-Bu dosya AgentFrame / AgentClaw için beta sürüm akışını tanımlar.
+Bu dosya AgentFrame için beta sürüm akışını tanımlar.
 
 ## Hedef Akış
 1. **beta1**: framework iskeleti GitHub'a yüklenir

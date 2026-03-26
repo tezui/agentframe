@@ -1,4 +1,4 @@
-# AgentClaw Dashboard
+# AgentFrame Dashboard
 
 Bu dosya tüm sistemi **kuşbakışı ve sade** görmen için hazırlanmıştır.
 
@@ -56,9 +56,9 @@ Bu dosya tüm sistemi **kuşbakışı ve sade** görmen için hazırlanmıştır
 ## 3) Sadece bakman gereken dosyalar
 
 ### Çok hızlı başlamak için
-1. `AGENTCLAW_DASHBOARD.md`
-2. `AGENTCLAW_QUICKSTART.md`
-3. `AGENTCLAW_SYSTEM_MAP.md`
+1. `AGENTFRAME_DASHBOARD.md`
+2. `AGENTFRAME_QUICKSTART.md`
+3. `AGENTFRAME_SYSTEM_MAP.md`
 
 ### Üretim öncesi
 1. `workflow/02-planning/current-task.md`
@@ -100,4 +100,4 @@ Bu dosya tüm sistemi **kuşbakışı ve sade** görmen için hazırlanmıştır
 ## 6) En sade dosya yolu
 Eğer karışıklık olursa sadece buradan ilerle:
 
-`AGENTCLAW_DASHBOARD.md`
+`AGENTFRAME_DASHBOARD.md`

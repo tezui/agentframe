@@ -2,8 +2,8 @@
 
 Karışıklık olursa sadece şu sırayla ilerle:
 
-1. `AGENTCLAW_DASHBOARD.md`
-2. `AGENTCLAW_QUICKSTART.md`
+1. `AGENTFRAME_DASHBOARD.md`
+2. `AGENTFRAME_QUICKSTART.md`
 3. `workflow/02-planning/current-task.md`
 4. `workflow/03-execution/task-status.md`
 5. `workflow/04-validation/error-log.md`

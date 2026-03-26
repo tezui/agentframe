@@ -1,13 +1,14 @@
-# AgentClaw Quickstart
+# AgentFrame Quickstart
 
 Yeni bir agent bu repo içinde çalışmaya başlamadan önce şunları yapar:
 
 ## 1) Oku
-1. `AGENTCLAW_SYSTEM_MAP.md`
-2. `workflow/00-system/SYSTEM_RULES.md`
-3. `workflow/00-system/PROJECT_RULES.md`
-4. `workflow/01-memory/active-context.md`
-5. `workflow/02-planning/current-task.md`
+1. `AGENTFRAME_INDEX.md`
+2. `AGENTFRAME_SYSTEM_MAP.md`
+3. `workflow/00-system/SYSTEM_RULES.md`
+4. `workflow/00-system/PROJECT_RULES.md`
+5. `workflow/01-memory/active-context.md`
+6. `workflow/02-planning/current-task.md`
 
 ## 2) Kontrol Et
 - Aktif writer lock var mı? → `workflow/llmadvice/LOCK.md`

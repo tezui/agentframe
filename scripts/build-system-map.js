@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const root = process.cwd();
-const out = path.join(root, 'AGENTCLAW_SYSTEM_MAP.generated.md');
+const out = path.join(root, 'AGENTFRAME_SYSTEM_MAP.generated.md');
 
 const sections = [
   ['System Rules', 'workflow/00-system/SYSTEM_RULES.md'],
@@ -14,7 +14,7 @@ const sections = [
   ['Research Rules', 'workflow/08-research/RESEARCH_RULES.md'],
 ];
 
-let content = '# AgentClaw Generated System Map\n\n';
+let content = '# AgentFrame Generated System Map\n\n';
 
 for (const [title, rel] of sections) {
   const file = path.join(root, rel);

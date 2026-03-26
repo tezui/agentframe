@@ -8,7 +8,7 @@ Yeni proje açılırken uygulanacak kurallar:
 ## 2) Seed Edilecekler
 - `workflow/`
 - gerekli `scripts/`
-- giriş dosyaları (`AGENTCLAW_QUICKSTART.md` benzeri proje quickstart)
+- giriş dosyaları (`AGENTFRAME_QUICKSTART.md` benzeri proje quickstart)
 
 ## 3) AgentFrame’de Kalacaklar
 - framework geliştirme dosyaları

@@ -1,16 +1,16 @@
-ya# AgentFrame vs AgentClaw — Deep Comparison Report
+# AgentFrame External Comparison Review
 
 ## 1) Bu raporun amacı
-Bu rapor, dış bir yapay zekanın verdiği karşılaştırmayı daha üst seviyede teknik doğrulukla yeniden değerlendirir.
+Dış bir yapay zekanın verdiği karşılaştırmayı güncel repo durumuna göre yeniden değerlendirir.
 
 ## 2) Kısa sonuç
-İlk rapor yön olarak faydalı ama artık **kısmen eski**. Çünkü AgentFrame repo içinde birçok eksik olarak söylenen parça artık eklenmiş durumda.
+İlk dış rapor yön olarak faydalı ama artık **kısmen eski**. Çünkü AgentFrame repo içinde birçok eksik olarak söylenen parça sonradan eklendi.
 
 ## 3) Dış raporun doğru tespitleri
 
 ### A. Güçlü mimari avantajlar
 - Numaralı katman yapısı LLM okuma sırası için çok iyi
-- `AGENTCLAW_SYSTEM_MAP.md` ve `AGENTCLAW_QUICKSTART.md` onboarding hızını artırıyor
+- `AGENTFRAME_SYSTEM_MAP.md` ve `AGENTFRAME_QUICKSTART.md` onboarding hızını artırıyor
 - `workflow/llmadvice/LOCK.md` çoklu agent çakışmasını önlüyor
 - `apps/dashboard/` ayrıştırılmış yapı olarak doğru yön
 - `workflow/08-research/` bilgi kaybını azaltıyor
@@ -23,8 +23,7 @@ Bu rapor, dış bir yapay zekanın verdiği karşılaştırmayı daha üst seviy
 ## 4) Dış raporun eskimiş / güncel olmayan tespitleri
 
 ### A. “scripts boş”
-Yanlış / eski bilgi.
-Şu an script kategorileri mevcut:
+Yanlış / eski bilgi. Şu an script kategorileri mevcut:
 - `scripts/security/`
 - `scripts/browser/`
 - `scripts/monitoring/`
@@ -34,23 +33,17 @@ Yanlış / eski bilgi.
 - `scripts/mcp/`
 
 ### B. “MCP entegrasyonu zayıf”
-Kısmen eski.
-Şu an `workflow/07-mcp/mcp-config.json` ve yardımcı scriptler var.
+Kısmen eski. Şu an `workflow/07-mcp/mcp-config.json` ve yardımcı scriptler var.
 
 ### C. “metrics/log yok”
-Eski bilgi.
-Şu an:
-- `workflow/05-monitoring/GLOBAL_DASHBOARD.md`
-- `workflow/05-monitoring/PROJECT_METRICS_REGISTRY.md`
-- proje bazlı metrik dosyaları
-- aggregation/sync scriptleri
+Eski bilgi. Şu an global dashboard, registry, proje bazlı metrik dosyaları ve sync scriptleri var.
 
 ## 5) AgentFrame’in mevcut güçlü yönleri
 - Çok katmanlı ama mantıklı yapı
 - Agentic davranış için memory + planning + validation + deploy bütünlüğü
 - Git / beta / release akışının tanımlı olması
 - Araştırma (`08-research`) ve arşiv (`09-archive`) katmanlarının bulunması
-- Kullanıcı için `AGENTCLAW_DASHBOARD.md` ile sade görünüm verilmesi
+- Kullanıcı için `AGENTFRAME_DASHBOARD.md` ile sade görünüm verilmesi
 
 ## 6) AgentFrame’in hâlâ eksik / zayıf yönleri
 - Dashboard kodu iskelet seviyesinde
@@ -60,12 +53,10 @@ Eski bilgi.
 
 ## 7) Teknik karar
 Bu repo artık “iskelet” seviyesini aşmış durumda.
-Doğru tanım:
 
 > **Operasyonel agentic framework + gelişen otomasyon platformu**
 
 ## 8) Sprint-2 için teknik yön
-Sprint-2’de odak artık klasör kurmak değil, şu 5 ekseni işletmek olmalı:
 1. dashboard gerçek MVP
 2. browser gerçek pipeline
 3. archive + monitoring otomatik entegrasyon

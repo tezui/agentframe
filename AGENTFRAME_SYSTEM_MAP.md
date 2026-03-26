@@ -1,4 +1,4 @@
-# 🧠 AgentClaw System Map
+# 🧠 AgentFrame System Map
 
 Bu dosya, tüm sistemin LLM-friendly kısa teknik haritasıdır.
 
@@ -44,7 +44,7 @@ Bu dosya, tüm sistemin LLM-friendly kısa teknik haritasıdır.
 2. `workflow/01-memory/active-context.md`
 3. `workflow/02-planning/current-task.md`
 4. `workflow/04-validation/error-log.md`
-5. Bu dosya (`AGENTCLAW_SYSTEM_MAP.md`)
+5. Bu dosya (`AGENTFRAME_SYSTEM_MAP.md`)
 
 ## 7. Canonical Not
 - Ajanlar arası iletişim için canonical klasör: `workflow/llmadvice`
