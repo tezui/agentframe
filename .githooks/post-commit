@@ -1,0 +1,6 @@
+#!/usr/bin/env sh
+
+set -e
+
+echo "[hook] post-commit memory update"
+node scripts/memory/log-commit.js

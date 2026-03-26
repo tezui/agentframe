@@ -1,0 +1,30 @@
+# Gemini CLI - Proje İnceleme ve Geliştirme Önerileri (26 Mart 2026)
+
+Proje üzerinde yapılan detaylı inceleme sonucunda, "AI Agent Geliştirme Çerçevesi" (Agentic Workflow Framework) yapısının güçlendirilmesi ve operasyonel hale getirilmesi için aşağıdaki öneriler sunulmuştur:
+
+## 1. Framework'ün Aktivasyonu (Activation)
+Proje kök dizininde (root), kullanılan AI araçlarının (Cursor, Cline, RooCode vb.) sistem kurallarını otomatik olarak okumasını sağlayacak kural dosyaları oluşturulmalıdır.
+- **Aksiyon:** `.cursor/rules.md`, `.clinerules` veya `.roocode.md` dosyalarını oluşturun ve bu dosyaların `workflow/00-system/SYSTEM_RULES.md` ile `workflow/01-memory/active-context.md` dosyalarını her prompt öncesi okumasını zorunlu kılın.
+
+## 2. Dashboard Projesinin Standartlara Taşınması
+`apps/dashboard` klasörü şu an boş bir iskelet durumundadır. Sistemin disiplinini test etmek için bu proje framework yapısına dahil edilmelidir.
+- **Aksiyon:** `workflow/projects/_template` içeriğini `workflow/projects/dashboard` klasörüne kopyalayın. Dashboard geliştirme sürecindeki tüm hafıza, planlama ve doğrulama kayıtlarını bu klasör üzerinden yönetin.
+
+## 3. Otomasyon Scriptlerinin İşlevselliği
+`scripts/` altındaki araçlar (güvenlik, görsel regresyon vb.) geliştirilmeli ve CI/CD süreçlerine entegre edilmelidir.
+- **Aksiyon:** `scripts/security/check-secrets.js` dosyasını `pre-commit` hook olarak yapılandırın. `visual-regression-check.js` için Playwright entegrasyonunu tamamlayarak `workflow/04-validation` klasörüne rapor üretmesini sağlayın.
+
+## 4. Hafıza (Memory) Yönetimi Otomasyonu
+`workflow/01-memory/` altındaki bağlam dosyalarının manuel güncellenmesi agent için ek yük oluşturabilir.
+- **Aksiyon:** Yapılan her git commit işleminden sonra commit özetini otomatik olarak `short-term.md` dosyasına işleyen bir script/alias oluşturarak "bağlam kaybını" (context loss) önleyin.
+
+## 5. MCP (Model Context Protocol) Güçlendirmesi
+`mcp-config.json` dosyasında tanımlı olan sunucuların (özellikle approval-gateway) implementasyonu tamamlanmalıdır.
+- **Aksiyon:** `approval-gateway.js` scriptini, agent'ın `workflow/00-system` klasöründeki kritik kuralları insan onayı olmadan değiştirmesini engelleyecek şekilde özelleştirin.
+
+## 6. UI Fidelity & Görsel Regresyon Entegrasyonu
+`workflow/UI_FIDELITY` altındaki kurallar ile projenin teknik stack'i (Tailwind, shadcn/ui) senkronize edilmelidir.
+- **Aksiyon:** `STRICT_RULES.md` dosyasına projenin renk paleti, tipografi ve boşluk (spacing) standartlarını ekleyin. Agent'ın bu standartların dışına çıkmasını `validation` aşamasında denetleyin.
+
+---
+Bu öneriler, projenin sadece bir kod deposu olmaktan çıkıp, kendi kendini yöneten ve denetleyen disiplinli bir "Agent İşletim Sistemi" haline gelmesini sağlayacaktır.

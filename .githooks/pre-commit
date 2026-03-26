@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+set -e
+
+echo "[hook] pre-commit checks"
+node scripts/security/check-secrets.js
+node scripts/browser/visual-regression-check.js

@@ -1,0 +1,11 @@
+# Cline Activation Rules
+
+## Mandatory Pre-Read
+- workflow/00-system/SYSTEM_RULES.md
+- workflow/01-memory/active-context.md
+- workflow/02-planning/current-task.md
+
+## Mandatory Post-Update
+- workflow/01-memory/short-term.md
+- workflow/03-execution/task-status.md
+- workflow/04-validation/error-log.md (hata varsa)

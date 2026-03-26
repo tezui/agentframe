@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentMessage",
+  "type": "object",
+  "required": [
+    "id",
+    "topic",
+    "author_agent",
+    "severity",
+    "content",
+    "status",
+    "created_at",
+    "updated_at"
+  ],
+  "properties": {
+    "id": { "type": "string" },
+    "topic": { "type": "string", "enum": ["error", "architecture", "security", "general"] },
+    "author_agent": { "type": "string" },
+    "severity": { "type": "string", "enum": ["low", "medium", "high", "critical"] },
+    "content": { "type": "string" },
+    "status": { "type": "string", "enum": ["open", "in_review", "resolved"] },
+    "created_at": { "type": "string" },
+    "updated_at": { "type": "string" }
+  }
+}

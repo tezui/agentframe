@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AgentComments",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["comment_id", "agent", "comment", "decision", "timestamp"],
+    "properties": {
+      "comment_id": { "type": "string" },
+      "agent": { "type": "string" },
+      "comment": { "type": "string" },
+      "decision": { "type": "string", "enum": ["agree", "disagree", "needs_data"] },
+      "timestamp": { "type": "string" }
+    }
+  }
+}
